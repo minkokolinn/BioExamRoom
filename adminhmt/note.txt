@@ -1,0 +1,129 @@
+    <div id="foo">this is foo</div>
+    <a href="#" onclick="toggle_visibility('foo');">Click</a>
+
+    <script type="text/javascript">
+	
+	    function toggle_visibility(id) {
+	       var e = document.getElementById(id);
+	        e.style.display = 'none';
+	        // e.style.display = 'block';
+	    }
+	
+	</script> 
+
+		// if ($status=="on") {
+	// 		echo "
+ //    		<script type='text/javascript'>
+	//  		var e=document.getElementById('layout1');
+	//  		e.style.display='none';
+ // 			</script>
+ //    	";
+	// }
+
+-------------------------------------------------------------
+
+	Trimming a string......
+    <?php
+	$str = "You are so preety____. But you also cute.|Hey Baby, You are hansome-><koko.";
+	$str_ar = explode('|', $str);
+	foreach ($str_ar as $value) {
+	  echo $value;
+	  echo "<br>";
+	}
+	?>
+	----------------------------------
+
+	
+                        	<h3>Multiple Choice Questions (<?php echo $nomul." Marks"; ?>)</h3>
+                        	<?php 
+                        		for ($i=1; $i <=$nomul ; $i++) { 
+                        			echo "
+                        			<div class='row'>
+                        				<div class='col-lg-1 col-md-1'>
+		                                    <div class='single_input'>
+		                                        <input type='text' value='$i .' name='tfnooftruefalse' autocomplete='off' required disabled>
+		                                    </div>
+		                                </div>
+		                                <div class='col-lg-11 col-md-11'>
+		                                    <div class='single_input'>
+		                                        <textarea name='tfstunote' id='' required></textarea>
+		                                    </div>
+		                                </div>
+		                            </div>
+		                            <div class='row'>
+		                                <div class='col-lg-6 col-md-6'>
+		                                    <div class='single_input'>
+		                                        <input type='text' placeholder='A' name='tfnooftruefalse' autocomplete='off' required>
+		                                    </div>
+		                                </div>
+		                                <div class='col-lg-6 col-md-6'>
+		                                    <div class='single_input'>
+		                                        <input type='text' placeholder='B' name='tfnooftruefalse' autocomplete='off' required>
+		                                    </div>
+		                                </div>
+		                            </div>
+		                            <div class='row'>
+		                                <div class='col-lg-6 col-md-6'>
+		                                    <div class='single_input'>
+		                                        <input type='text' placeholder='C' name='tfnooftruefalse' autocomplete='off' required>
+		                                    </div>
+		                                </div>
+		                                <div class='col-lg-6 col-md-6'>
+		                                    <div class='single_input'>
+		                                        <input type='text' placeholder='D' name='tfnooftruefalse' autocomplete='off' required>
+		                                    </div>
+		                                </div>
+		                            </div>
+		                            <div class='row'>
+		                                <div class='col-lg-6 col-md-6'>
+		                                    <div class='single_input'>
+		                                        <input type='text' placeholder='True Answer' name='tfnooftruefalse' autocomplete='off' required>
+		                                    </div>
+		                                </div>
+		                            </div>
+                        			";
+                        		}
+                        		
+                        	 ?>
+
+                        	 <h3>Completion. (Fill in the blank) (<?php echo $nocom." Marks"; ?>)</h3>
+                        	<?php 
+                        		for ($i=1; $i <=$nocom ; $i++) { 
+                        			echo "
+                        			<div class='row'>
+                        				<div class='col-lg-1 col-md-1'>
+		                                    <div class='single_input'>
+		                                        <input type='text' value='$i .' name='tfnooftruefalse' autocomplete='off' disabled required>
+		                                    </div>
+		                                </div>
+		                                <div class='col-lg-11 col-md-11'>
+		                                    <div class='single_input'>
+		                                        <textarea name='tfstunote' id='' required></textarea>
+		                                    </div>
+		                                </div>
+		                            </div>
+                        			";
+                        		}
+                        		
+                        	 ?>
+
+                        	 <h3>Short Question (<?php echo $noshort." Marks"; ?>)</h3>
+                        	<?php 
+                        		for ($i=1; $i <=$noshort ; $i++) { 
+                        			echo "
+                        			<div class='row'>
+                        				<div class='col-lg-1 col-md-1'>
+		                                    <div class='single_input'>
+		                                        <input type='text' value='$i .' name='tfnooftruefalse' autocomplete='off' disabled required>
+		                                    </div>
+		                                </div>
+		                                <div class='col-lg-11 col-md-11'>
+		                                    <div class='single_input'>
+		                                        <textarea name='tfstunote' required></textarea>
+		                                    </div>
+		                                </div>
+		                            </div>
+                        			";
+                        		}
+                        		
+                        	 ?>
